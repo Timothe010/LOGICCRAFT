@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px Arial;
+    width: 100%;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+header{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-color: #050708;
+}
+.header-title h1 a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-title i{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/*section menu deroulan*/
+
+.menu {
+    height: 60px;
+    list-style: none;
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    z-index: 10;
+}
+
+.menu li {
+    width: 150px;
+}
+
+.menu li a:link, .menu li a:visited {
+    display: flex;
+    color: #ffffff;
+    background: transparent;
+    padding: 5px 0px;
+    text-decoration: none;
+}
+
+.menu li a:hover {color: #ffffff;}
+
+.menu .sousmenu {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.menu .sousmenu li {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    font-size: 1.1em;                 /* the font for li'sousmenu' */
+}
+.all-li{
+    font-size: 1.3em;                 /* the font for li'menu' */
+}
+
+
+.menu .sousmenu li a:link, .menu li a:visited {
+    display: block;
+    color: #777777;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.menu .sousmenu li a:hover {
+    color: #ffffff;
+}
+
+.menu li:hover .sousmenu {
+    display: block;
+}
+
+.buttom{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: transparent;
+    transition: 1s;
+}
+
+.buttom a{
+    text-decoration: none;
+    text-transform: none;
+    color: #ffffff;
+    padding: 10px 30px;
+}
+
+.buttom:hover{
+    color: #ffffff;
+    background-color: #ffffff;
+    border: #000000;
+    transition: 1s;
+}
+
+.buttom a:hover{
+    color: #000000;
+}
+
+/*main all the page*/
+
+main{
+    width: 100%;
+    padding-left: 0%;
+    padding-left: 0%;
+}
+
+/*main section 1 */
+
+#main-section-1{
+    width: 100%;
+    padding-left: 0%;
+    padding-left: 0%;
+}
+.main-haut{
+    width: 100%;
+    height: 700px;
+    background-color: #050708;
+    background-size: cover;
+    justify-content: cover;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    z-index: 1;
+}
+
+.main-haut-left{
+    width: 35%;
+    height: auto;
+    padding-top: 150px;
+}
+.main-haut h2{
+    color: #ffffff;
+    font-size: 5em;
+    padding-bottom:30px ;
+}
+.main-haut-left p{
+    color: #ffffff;
+    font-size: 1.8em;
+    letter-spacing:1px;
+    padding-bottom: 50px;    
+}
+
+
+.buttom-2{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: transparent;
+    transition: 1s;
+}
+
+.buttom-2 a{
+    text-decoration: none;
+    text-transform: none;
+    color: #ffffff;
+    padding: 10px 30px;
+}
+
+.buttom-2:hover{
+    color: #ffffff;
+    background-color: #e00303;
+    border: #000000;
+    transition: 1s;
+}
+
+.buttom-2 a:hover{
+    color: #000000;
+}
+
+img{
+    width: 500px;
+    height: 700px;
+    margin: 0px 500px 0px 0px;
+    z-index: 2;
+}
+
+/*main section 2*/
+
+#main-section-2{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+}   
+
+.icone-all{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    justify-content:space-between;
+    padding: 100px 0px ;
+}
+
+.icone-all a{
+    font-size: 5em;
+    color: #050708;
+}
+
+
+.icone-1 a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icone-1 .icone-1-a-all{
+    font-size: 1.6em;
+    padding-top: 20px;   /*pour changer de position en top les lien*/
+
+}
+
+
+#main-section-3{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 1000px;
+    background-color: #050708;
+}   
+
+.grid-all{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 500px;
+    grid-gap: 30px;
+    padding-top: 30px;
+}
+
+/*all box-1-2-3*/
+.texte-box-1-2-3{
+    width: 70%;
+    background: linear-gradient(to right, #000000, transparent);
+    height: 400px;
+    padding-left: 15px;
+    z-index: 2;
+}
+
+.texte-box-1-2-3 h1{
+    color: #ffffff;
+    padding: 50px 0px 30px 0px;
+    font-size: 2.3em;
+}
+
+.texte-box-1-2-3 p{
+    font-size: 1.3em;
+    color: #ffffff;
+    padding-bottom: 40px;
+}
+
+.buttom-all-box-1-2-3{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: transparent;
+    transition: 1s;
+}
+
+.buttom-all-box-1-2-3 a{
+    text-decoration: none;
+    text-transform: none;
+    color: #ffffff;
+    padding: 10px 30px;
+}
+
+.buttom-all-box-1-2-3:hover{
+    background-color: #ffffff;
+    border: #000000;
+    transition: 1s;
+}
+
+.buttom-all-box-1-2-3 a:hover{
+    color: #000000;
+}
+
+/*box 1 left*/
+
+.box-1-left{
+    background:url(image/lol.jpg);
+    background-size: cover;
+    justify-content: center;
+    width: 100%;
+    height:380px;
+    transition: 1s;
+    z-index: 1;   /*a modifier z-index*/
+}
+
+.box-1-left:hover{
+    padding-top: 20px;
+    transition: 1s;
+}
+
+/*box 2 top*/
+
+.box-2-top{
+    background:url(image/filippo.jpg);
+    background-size: cover;
+    justify-content: left;
+    width: 100%;
+    height:400px;
+    transition: 1s;
+}
+.box-2-top:hover{
+    padding-top: 20px;
+    transition: 1s;
+}
+
+/*box 3 right*/
+.box-3-right{
+    background:url(image/alexander.jpg);
+    background-size: cover;
+    justify-content: cover;
+    width: 100%;
+    height:400px;
+    transition: 1s;
+}
+.box-3-right:hover{
+    padding-top: 20px;
+    transition: 1s;
+}
+
+/*box 4 buttom*/
+
+.box-4-buttom{
+    background:url(image/iiiiiiii.jpg);
+    background-size: cover;
+    object-fit: cover;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    grid-column: 1 / 4;
+    transition: 1s;
+}
+
+.box-4-buttom:hover{
+    padding: 20px;
+    transition: 1s;
+}
+
+/*main section 4*/
+#main-section-4{
+    width: 100%;
+    height: 600px;
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #242424;
+}
